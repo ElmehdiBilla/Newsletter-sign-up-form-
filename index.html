@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="cover">
+      <picture>
+        <source  media="(max-width: 767px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+        <source   media="(min-width: 768px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+        <img src="assets/images/illustration-sign-up-mobile.svg">
+      </picture>
+    </div>
+    <div class="infos">
+      <h1>Stay updated!</h1>
+      <p>join 60,000+ pro uct managers receiving
+        onthly updates on:</p>
+      <div class="features">
+        <div class="feature">
+          <img src="assets/images/icon-list.svg" alt="">
+          <p>Product discovery and building what
+            matters</p>
+        </div>
+        <div class="feature">
+          <img src="assets/images/icon-list.svg" alt="">
+          <p>measunng o ensure up ates are a
+            success</p>
+        </div>
+        <div class="feature">
+          <img src="assets/images/icon-list.svg" alt="">
+          <p>and much more!</p>
+        </div>
+      </div>
+      <div class="email">
+        <label for="email">email adress <span class="err"></span></label>
+        <input id="email"  type="text" placeholder="email@company.com">
+          <a id="sub-btn" class="subscribe" href="javascript:void(0);">Subscribe to monthly newsletter</a>
+      </div> 
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

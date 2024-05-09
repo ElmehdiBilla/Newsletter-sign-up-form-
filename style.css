@@ -1,0 +1,107 @@
+:root{
+--Tomato: hsl(4, 100%, 67%);
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto;
+    text-transform: capitalize;
+    color: var(--CharcoalGrey);
+    font-weight: 500;
+}
+
+.cover img{
+    width: 100%;
+}
+.infos{
+    padding: 20px;
+}
+.infos>p{
+    margin: 20px 0px;
+}
+.infos>h1{
+    color: var(--DarkSlateGrey);
+}
+.feature{
+    display: flex;
+    margin-bottom: 20px;
+}
+.feature p{
+    margin-left: 10px;
+}
+.email {
+    margin: 40px 0px;
+}
+.email label {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.email label span {
+    color: var(--Tomato);
+}
+.email input{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    margin-top:10px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey);
+    outline: none;
+}
+.subscribe{
+    margin-top:20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--DarkSlateGrey);
+    color: white;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.subscribe:hover{
+    background-color: var(--Tomato);
+}
+.err-cl{
+    border: 1px solid var(--Tomato) !important;
+    background-color: rgb(253, 232, 229);
+    color: var(--Tomato) !important;
+}
+@media (min-width:768px){
+    body{
+        background-color: var(--CharcoalGrey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        background-color: white;
+        border-radius: 10px;
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    p{
+        font-size: 14px;
+    }
+    .feature{
+        margin-bottom: 10px;
+    }
+    .cover img{
+        max-height: 100%;
+    }
+}

@@ -1,0 +1,72 @@
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+}
+.msg{
+    font-weight: 800;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 50px;
+    margin: 20px 0px;
+}
+h1{
+    margin: 20px 0px;
+}
+p{
+    line-height: 25px;
+    text-transform:lowercase;
+}
+.msg-info{
+    width: 90%;
+    margin: 20px;
+}
+.btn-dismiss{
+    background-color: var(--CharcoalGrey);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px;
+    position: absolute;
+    margin: 20px 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.btn-dismiss:hover{
+    background-color: var(--Tomato);
+}
+.btn-dismiss a{
+    color: white;
+    text-decoration: none;
+}
+@media (min-width:768px){
+    .msg-container{
+        position: absolute;
+        background-color: white;
+        width: 50%;
+        max-width: 370px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-dismiss{
+        position:static;
+        transform: none;
+    }
+    img{
+        width: 50px;
+        margin: 5px 0px;
+    }
+}
